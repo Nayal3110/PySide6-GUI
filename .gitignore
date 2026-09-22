@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Runtime data — logs, measurement TSVs, SQLite session DB
+data/log/
+data/measures/
+data/tdam.db
+data/tdam.db-wal
+data/tdam.db-shm
+
+#CLAUDE files
+.claude

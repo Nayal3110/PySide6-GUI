@@ -1,0 +1,22 @@
+# Measurement command sequences for TDAM
+# Each inner list is one sequence dispatched to the PCB in order.
+
+[measurement]
+sequences = [
+    ["RS"],
+    ["TM"],
+    ["GC"],
+    ["CA-T1AA", "CA-R2AA", "SA"],
+    ["GC"],
+    ["RS"],
+    ["CA-T1AA", "CA-R2TP", "CA-R3AA", "SA"],
+    ["GC"],
+    ["RS"],
+    ["CA-T1TP", "CA-T3AA", "CA-R2AA", "SA"],
+    ["GC"],
+    ["RS"],
+    ["CA-T1TP", "CA-T3AA", "CA-R2TP", "CA-R3AA", "SA"],
+    ["GC"],
+    ["TM"],
+    ["RS"],
+]

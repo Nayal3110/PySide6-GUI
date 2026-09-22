@@ -1,0 +1,36 @@
+[project]
+name = "tdam"
+version = "1.0.3"
+description = "TDAM Acquisition Tool – VNA + STM32 measurement suite"
+authors = [{ name = "Neil Fuentes", email = "neil.fuentes@supsi.ch" }]
+license = { text = "Proprietary" }
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.4.3",
+    "pyqtgraph>=0.14.0",
+    "pyserial>=3.5",
+    "pyside6>=6.10.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller>=6.19.0",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "pytest-qt>=4.4.0",
+    "ruff>=0.6.0",
+]
+
+[project.scripts]
+tdam = "src.tdam.main:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+extend-exclude = ["build", "dist", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]  # line length handled by formatter
+

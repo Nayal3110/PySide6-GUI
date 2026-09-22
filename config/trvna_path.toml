@@ -1,0 +1,5 @@
+# Path to the TRVNA VNA control software executable.
+# Use forward slashes or double backslashes on Windows.
+
+[trvna]
+path = 'C:\VNA\TRVNA\TRVNA.exe'

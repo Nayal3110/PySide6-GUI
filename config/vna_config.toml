@@ -1,0 +1,13 @@
+# VNA configuration for TDAM
+# Keys match VNAConfig dataclass fields directly.
+
+[vna]
+fstart_mhz = 50
+fstop_mhz  = 400
+npoints    = 1001
+ifbw_hz    = 1000
+power_dbm  = -30
+average    = 1
+interval_s = 180
+mean_count = 10
+refvalue = -40
